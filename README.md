@@ -1,0 +1,1 @@
+# workshop-shared-platfrom-stack
