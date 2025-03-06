@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: example-cert
+  namespace: default
+spec:
+  dnsNames:
+  - cert.vcluster.tech
+  issuerRef:
+    name: letsencrypt
+    kind: Issuer
+  secretName: example-cert-tls

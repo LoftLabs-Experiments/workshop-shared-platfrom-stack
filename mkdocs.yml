@@ -1,0 +1,10 @@
+site_name: "Multi-Tenancy March Workshop"
+theme:
+  name: "material"
+  palette:
+    primary: "blue"
+    accent: "light blue"
+nav:
+  - Home: index.md
+  - Workshop Guide: workshop.md
+

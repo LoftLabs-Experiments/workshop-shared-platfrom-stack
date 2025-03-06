@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workshop-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: workshop-app
+  template:
+    metadata:
+      labels:
+        app: workshop-app
+    spec:
+      containers:
+      - name: workshop-app
+        image: ghcr.io/saiyam1814/workshop-app/app-aa284c17315a7174d574f1289bcea2ba:v2@sha256:d46f447f6fbd53e6fd418953248cec987405e71cbecbb975859811f23244bf83  # <-- replace with your ko image
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: workshop-service
+spec:
+  selector:
+    app: workshop-app
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
