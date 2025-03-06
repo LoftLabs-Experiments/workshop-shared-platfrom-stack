@@ -48,12 +48,8 @@ Build and push your image:
 ko build ./app -t latest
 ```
 
-Update your Kubernetes Deployment YAML with the generated image URL and deploy it:
-
-```
-kubectl apply -f app.yaml
-```
-Your Go application is now containerized, pushed, and deployed using KO!
+Update your Kubernetes Deployment YAML with the generated image URL
+Your Go application is now containerized and pushed.
 
 ## 2. Setting Up vCluster
 We will configure a vCluster with cert-manager integration enabled.
