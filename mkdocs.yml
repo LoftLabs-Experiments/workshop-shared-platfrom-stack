@@ -1,4 +1,5 @@
 site_name: "Multi-Tenancy March Workshop"
+site_url: "https://LoftLabs-Experiments.github.io/workshop-shared-platfrom-stack/"
 theme:
   name: "material"
   palette:
