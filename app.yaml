@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: workshop-app
-        image: ghcr.io/saiyam1814/workshop-app/app-aa284c17315a7174d574f1289bcea2ba:v2@sha256:d46f447f6fbd53e6fd418953248cec987405e71cbecbb975859811f23244bf83  # <-- replace with your ko image
+        image: ghcr.io/saiyam1814/workshop-app/app-aa284c17315a7174d574f1289bcea2ba@sha256:767debe34d42e8ac553c9e2261bd04c8a83e1d0cae356158f4da0a4e01ea9d07
         ports:
         - containerPort: 8080
 ---

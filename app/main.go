@@ -14,7 +14,7 @@ var staticFS embed.FS
 
 func handler(w http.ResponseWriter, r *http.Request) {
 	tmpl := template.Must(template.ParseFS(templatesFS, "templates/index.html"))
-	data := struct{ Title string }{Title: "Welcome to the Multi-Tenancy March Series Powered by Loft Labs"}
+	data := struct{ Title string }{Title: "Welcome to KubeCon EU 2025"}
 	tmpl.Execute(w, data)
 }
 
